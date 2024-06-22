@@ -43,7 +43,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "yarn lint:check"
+      "yarn format"
     ]
   },
   "eslintConfig": {
