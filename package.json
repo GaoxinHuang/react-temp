@@ -7,6 +7,7 @@
     "build": "craco build",
     "test": "craco test",
     "test:check": "craco test --watchAll=false",
+    "test:coverage": "craco test --silent --coverage --runInBand --watchAll=false",
     "prod": "yarn build && serve -s build",
     "lint": "eslint src --fix",
     "lint:check": "eslint src",
@@ -21,9 +22,11 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
+    "@testing-library/react": "^15.0.6",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
