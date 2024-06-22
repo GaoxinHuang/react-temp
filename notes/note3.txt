@@ -1,3 +1,5 @@
 一.	craco
 1.	了解了什么是 craco： 不需要用 yarn eject
 2.	推掉之前的 重新做
+
+二. 由于 husky 的新版不太需要, 可以考虑加回, 如果只想check commit 的文件
