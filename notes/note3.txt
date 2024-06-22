@@ -3,3 +3,4 @@
 2.	推掉之前的 重新做
 
 二. 修改了 lint-staged. 因为只想check commit 的文件。 由于 husky 的新版, 其实也可以不需要lint-staged
+注: lint-staged 虽然只会测  commit 的文件。 但是它还会测 src 以外的文件夹
