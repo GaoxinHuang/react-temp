@@ -30,7 +30,6 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "react-scripts": "5.0.1",
     "serve": "^14.2.3",
@@ -40,16 +39,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "yarn run format:check",
-      "yarn run lint:check"
-    ],
-    "*.{css,scss }":[
-      "yarn run format:check",
-      "yarn run lint:check"
-    ]
   },
   "eslintConfig": {
     "extends": [
