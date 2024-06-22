@@ -30,6 +30,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "react-scripts": "5.0.1",
     "serve": "^14.2.3",
@@ -37,8 +38,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format:check && yarn lint:check"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "yarn lint:check"
+    ]
   },
   "eslintConfig": {
     "extends": [
