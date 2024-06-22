@@ -1,0 +1,17 @@
+一.	取消了 warning from babel 
+0.	https://stackoverflow.com/questions/76435306/babel-preset-react-app-is-importing-the-babel-plugin-proposal-private-propert
+1.	添加 yarn add --dev @babel/plugin-transform-private-property-in-object
+
+二.	加了 prettier
+1.	加了 .prettierrc.js
+
+三.	加了 指令 (包括 prettier)
+		"lint": "eslint src --fix",
+        "lint:check": "eslint src",
+        "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
+        "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\""
+		
+四.	加了 husky
+1.	 "prepare": "husky init" 指令
+2.	跑 yarn prepare
+3.	编辑 pre-commit

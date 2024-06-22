@@ -1,0 +1,11 @@
+第一天: 
+1.	yarn run eject
+2.	整理了 dependencies 和 devDependencies (跑了 npx sort-package-json 并且把 dependencies 和 devDependencies 放前面)
+3.	安装了 serve 
+4.  添加了 
+  "resolutions": {
+    "strip-ansi": "6.0.0",
+    "wrap-ansi": "7.0.0",
+    "string-width": "4.1.0"
+  },
+  去解决 react build 的问题 和 跑 prod 文件的问题 - 详见 Javascript/配置环境(webpack_babel_yarn_ts_jest)/yarn_npm/package.json有用的模块.txt
