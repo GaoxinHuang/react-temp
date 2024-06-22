@@ -2,4 +2,4 @@
 1.	了解了什么是 craco： 不需要用 yarn eject
 2.	推掉之前的 重新做
 
-二. 由于 husky 的新版不太需要, 可以考虑加回, 如果只想check commit 的文件
+二. 修改了 lint-staged. 因为只想check commit 的文件。 由于 husky 的新版, 其实也可以不需要lint-staged
