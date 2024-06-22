@@ -12,7 +12,8 @@
     "lint:check": "eslint src",
     "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
     "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -37,12 +38,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "yarn run format",
+      "yarn run format:check",
       "yarn run lint:check"
     ]
   },
