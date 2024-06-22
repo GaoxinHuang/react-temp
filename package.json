@@ -36,9 +36,17 @@
     "serve": "^14.2.3",
     "typescript": "^4.4.2"
   },
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,ts,tsx}": [
+      "yarn run format:check",
+      "yarn run lint:check"
+    ],
+    "*.{css,scss }":[
       "yarn run format:check",
       "yarn run lint:check"
     ]
