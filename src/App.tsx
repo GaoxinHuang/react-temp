@@ -9,7 +9,6 @@ function App() {
       .then((data) => {
         console.log('users api', data);
       });
-    console.log('test');
   }, []);
   return (
     <div className="App">

@@ -6,7 +6,7 @@
     "start": "craco  start",
     "build": "craco build",
     "test": "craco test",
-    "test:check": "craco test --watchAll=false",
+    "test:check": "craco test --silent --watchAll=false",
     "test:coverage": "craco test --silent --coverage --runInBand --watchAll=false",
     "prod": "yarn build && serve -s build",
     "lint": "eslint src --fix",
@@ -33,12 +33,14 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "babel-jest": "^29.7.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "msw": "^2.3.1",
     "prettier": "^3.3.2",
     "react-scripts": "5.0.1",
     "serve": "^14.2.3",
+    "ts-jest": "^29.1.5",
     "typescript": "^4.4.2"
   },
   "lint-staged": {
