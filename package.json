@@ -14,7 +14,8 @@
     "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
     "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
     "eject": "react-scripts eject",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -41,8 +42,8 @@
     "typescript": "^4.4.2"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,css,scss}": [
-      "yarn run format:check",
+    "src/**/*.{js,ts,tsx,css,scss}": [
+      "yarn run format",
       "yarn run lint:check"
     ]
   },
