@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
+    var x = 0;
     fetch('/api/users')
       .then((res) => res.json())
       .then((data) => {
